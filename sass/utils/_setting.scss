@@ -1,0 +1,48 @@
+header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.sec-ourside h2,
+.sec-ourwork h2,
+.sec-ourteam h2,
+.sec-ourclients h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Стилизация всех кнопок */
+.main-button,
+.button-filter,
+.form-sendbutton,
+.button-foot {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  outline: none;
+}

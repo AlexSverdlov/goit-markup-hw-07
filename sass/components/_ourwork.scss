@@ -1,0 +1,48 @@
+.sec-ourwork {
+  margin-top: 94px;
+}
+
+.sec-ourworklist {
+  display: flex;
+  margin-top: 50px;
+}
+.sec-ourworklist > li {
+  display: flex;
+  height: 294px;
+  width: 370px;
+  align-items: flex-end;
+}
+
+.sec-ourworklist > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sec-ourworklist > li > div {
+  height: 70px;
+  width: inherit;
+  padding-top: 10px;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  text-align: center;
+}
+
+.sec-ourworklist > li:nth-child(1) {
+  background-image: url("../images/boxOptim1.jpg");
+}
+
+.sec-ourworklist > li:nth-child(2) {
+  background-image: url("../images/boxOptim2.jpg");
+}
+.sec-ourworklist > li:nth-child(3) {
+  background-image: url("../images/boxOptim3.jpg");
+}
+
+.sec-ourworklist h3 {
+  font-weight: bold;
+  font-size: 16px;
+
+  text-transform: uppercase;
+  color: white;
+}

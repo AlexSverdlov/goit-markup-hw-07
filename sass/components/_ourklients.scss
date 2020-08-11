@@ -1,0 +1,42 @@
+.sec-ourclients {
+  margin-top: 94px;
+}
+.sec-ourclientslist {
+  display: flex;
+
+  margin-top: 50px;
+}
+
+.sec-ourclientslist > li {
+  width: calc((100% - 30px * 5) / 6);
+}
+
+.sec-ourclientslist > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.ourclientsicons {
+  display: flex;
+  height: 90px;
+  border-radius: 5px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.ourclientsicons:hover {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.icon-logo1,
+.icon-logo2,
+.icon-logo3,
+.icon-logo4,
+.icon-logo5,
+.icon-logo6 {
+  margin: auto;
+  fill: currentColor;
+}
