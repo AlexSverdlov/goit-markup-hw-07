@@ -1,5 +1,5 @@
 .sec-hero h1 {
-  color: var(--primary-bg-color);
+  color: $primary-bg-color;
   margin-top: 0;
   margin-bottom: 30;
 }
@@ -22,8 +22,8 @@
 
 .main-button {
   font-weight: bold;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: $accent-color;
+  color: $primary-bg-color;
   height: 50px;
   width: 200px;
   border-radius: 5px;
@@ -31,9 +31,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
-}
 
-.main-button:hover,
-.main-button:focus {
-  background-color: #49a5f0;
+  &:hover,
+  &:focus {
+    background-color: #49a5f0;
+  }
 }

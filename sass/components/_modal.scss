@@ -16,7 +16,7 @@
   width: 528px;
   height: 581px;
   padding: 40px;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 
   text-align: center;
 
@@ -32,7 +32,7 @@
 .modal h2 {
   margin: 0;
   font-size: 20px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .button-close {
@@ -45,10 +45,9 @@
   border-radius: 50%;
   border: 1px solid #d1cfcf;
   outline: none;
-}
-
-.button-close:hover {
-  fill: var(--accent-color);
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
 .form-field {
@@ -65,23 +64,9 @@
   border-radius: 5px;
   border: 1px solid #d1cfcf;
   outline: none;
-}
-.form-input:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-input:focus + .form-label {
-  transform: translate(-20px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-input:not(:placeholder-shown) + .form-label {
-  transform: translate(-20px, -40px);
-  font-size: 12px;
-}
-.form-input:focus ~ .icon-Human {
-  fill: var(--accent-color);
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 
 .form-label {
@@ -91,6 +76,17 @@
   transform: translateY(-50%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-input:focus + & {
+    transform: translate(-20px, -40px);
+    font-size: 12px;
+    color: $accent-color;
+  }
+
+  .form-input:not(:placeholder-shown) + & {
+    transform: translate(-20px, -40px);
+    font-size: 12px;
+  }
 }
 .icon-Human {
   position: absolute;
@@ -98,6 +94,10 @@
   transform: translateY(-50%);
   top: 50%;
   left: 16px;
+
+  .form-input:focus ~ & {
+    fill: $accent-color;
+  }
 }
 
 .form-tel {
@@ -114,23 +114,9 @@
   border-radius: 5px;
   border: 1px solid #d1cfcf;
   outline: none;
-}
-.form-inputtel:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-inputtel:focus + .form-label-tel {
-  transform: translate(-20px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-inputtel:not(:placeholder-shown) + .form-label-tel {
-  transform: translate(-20px, -40px);
-  font-size: 12px;
-}
-.form-inputtel:focus ~ .icon-Trubka {
-  fill: var(--accent-color);
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 
 .form-label-tel {
@@ -140,6 +126,17 @@
   transform: translateY(-50%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-inputtel:focus + & {
+    transform: translate(-20px, -40px);
+    font-size: 12px;
+    color: $accent-color;
+
+    .form-inputtel:not(:placeholder-shown) + & {
+      transform: translate(-20px, -40px);
+      font-size: 12px;
+    }
+  }
 }
 .icon-Trubka {
   position: absolute;
@@ -147,6 +144,10 @@
   transform: translateY(-50%);
   top: 50%;
   left: 16px;
+
+  .form-inputtel:focus ~ & {
+    fill: $accent-color;
+  }
 }
 .form-mail {
   position: relative;
@@ -162,23 +163,9 @@
   border-radius: 5px;
   border: 1px solid #d1cfcf;
   outline: none;
-}
-.form-inputmail:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-inputmail:focus + .form-label-mail {
-  transform: translate(-20px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-inputmail:not(:placeholder-shown) + .form-label-mail {
-  transform: translate(-20px, -40px);
-  font-size: 12px;
-}
-.form-inputmail:focus ~ .icon-Konvert {
-  fill: var(--accent-color);
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 
 .form-label-mail {
@@ -188,6 +175,17 @@
   transform: translateY(-50%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-inputmail:focus + & {
+    transform: translate(-20px, -40px);
+    font-size: 12px;
+    color: $accent-color;
+  }
+
+  .form-inputmail:not(:placeholder-shown) + & {
+    transform: translate(-20px, -40px);
+    font-size: 12px;
+  }
 }
 .icon-Konvert {
   position: absolute;
@@ -195,6 +193,10 @@
   transform: translateY(-50%);
   top: 50%;
   left: 16px;
+
+  .form-inputmail:focus ~ & {
+    fill: $accent-color;
+  }
 }
 .form-komment {
   position: relative;
@@ -212,20 +214,9 @@
   border: 1px solid #d1cfcf;
   outline: none;
   resize: none;
-}
-.form-areakomment:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-areakomment:focus + .form-label-komm {
-  transform: translate(3px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-areakomment:not(:placeholder-shown) + .form-label-komm {
-  transform: translate(3px, -40px);
-  font-size: 12px;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 
 .form-label-komm {
@@ -235,6 +226,17 @@
   transform: translateY(-50%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-areakomment:focus + & {
+    transform: translate(3px, -40px);
+    font-size: 12px;
+    color: $accent-color;
+
+    .form-areakomment:not(:placeholder-shown) + & {
+      transform: translate(3px, -40px);
+      font-size: 12px;
+    }
+  }
 }
 
 .form-check {
@@ -253,23 +255,25 @@
   appearance: none;
   position: absolute;
 }
-.checkbox:checked + .icon {
-  border: none;
-  background-image: url(../images/iconcheck.svg);
-  background-size: contain;
-}
+
 .icon {
   display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
+
+  .checkbox:checked + & {
+    border: none;
+    background-image: url(../images/iconcheck.svg);
+    background-size: contain;
+  }
 }
 
 .form-sendbutton {
   font-weight: bold;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: $accent-color;
+  color: $primary-bg-color;
   height: 50px;
   width: 200px;
   border-radius: 5px;
@@ -277,9 +281,9 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-sendbutton:hover,
-.form-sendbutton:focus {
-  background-color: #49a5f0;
+  &:hover,
+  &:focus {
+    background-color: #49a5f0;
+  }
 }

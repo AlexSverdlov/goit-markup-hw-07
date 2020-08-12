@@ -68,7 +68,7 @@ h1 {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: var(--primary-text-color);
+  color: #212121;
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
@@ -80,9 +80,8 @@ h1 {
           transition-delay: 0;
 }
 
-.nav-mainitem:hover,
-.nav-mainitem:focus {
-  color: var(--accent-color);
+.nav-mainitem:hover, .nav-mainitem:focus {
+  color: #2196f3;
 }
 
 .nav-mainitem.selected {
@@ -90,7 +89,7 @@ h1 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .nav-mainitem.selected::after {
@@ -136,7 +135,7 @@ address {
 
 .nav-adressitem {
   display: inline-block;
-  color: var(--primary-text-color);
+  color: #212121;
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
@@ -148,9 +147,8 @@ address {
           transition-delay: 0;
 }
 
-.nav-adressitem:hover,
-.nav-adressitem:focus {
-  color: var(--accent-color);
+.nav-adressitem:hover, .nav-adressitem:focus {
+  color: #2196f3;
   --color5: var(--accent-color);
 }
 
@@ -181,7 +179,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  color: var(--secondary-bg-color);
+  color: #f5f4fa;
 }
 
 footer h2 {
@@ -206,7 +204,7 @@ footer p {
 }
 
 .nav-adressitem-foot {
-  color: var(--secondary-text-color);
+  color: #757575;
   text-decoration: none;
   -webkit-transition-property: color;
   transition-property: color;
@@ -218,9 +216,8 @@ footer p {
           transition-delay: 0;
 }
 
-.nav-adressitem-foot:hover,
-.nav-adressitem-foot:focus {
-  color: var(--accent-color);
+.nav-adressitem-foot:hover, .nav-adressitem-foot:focus {
+  color: #2196f3;
 }
 
 .svgnav-item-foot {
@@ -268,7 +265,7 @@ footer p {
 }
 
 .buttonlinkfoot a:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   color: white;
 }
 
@@ -290,9 +287,9 @@ footer p {
   padding-left: 12px;
   font-size: 16px;
   border-radius: 5px;
-  color: var(--secondary-text-color);
+  color: #757575;
   background-color: #2f303a;
-  border: 1px solid var(--secondary-text-color);
+  border: 1px solid #757575;
   outline: none;
 }
 
@@ -308,8 +305,8 @@ footer p {
           justify-content: center;
   font-weight: bold;
   margin-left: 10px;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: #2196f3;
+  color: #fff;
   height: 50px;
   width: 200px;
   border-radius: 5px;
@@ -332,8 +329,7 @@ footer p {
   background-size: contain;
 }
 
-.button-foot:hover,
-.button-foot:focus {
+.button-foot:hover, .button-foot:focus {
   background-color: #49a5f0;
 }
 
@@ -357,7 +353,7 @@ footer p {
   width: 528px;
   height: 581px;
   padding: 40px;
-  color: var(--secondary-text-color);
+  color: #757575;
   text-align: center;
   background-color: white;
   top: 50%;
@@ -372,7 +368,7 @@ footer p {
 .modal h2 {
   margin: 0;
   font-size: 20px;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .button-close {
@@ -388,7 +384,7 @@ footer p {
 }
 
 .button-close:hover {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .form-field {
@@ -408,24 +404,7 @@ footer p {
 }
 
 .form-input:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-input:focus + .form-label {
-  -webkit-transform: translate(-20px, -40px);
-          transform: translate(-20px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-input:not(:placeholder-shown) + .form-label {
-  -webkit-transform: translate(-20px, -40px);
-          transform: translate(-20px, -40px);
-  font-size: 12px;
-}
-
-.form-input:focus ~ .icon-Human {
-  fill: var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .form-label {
@@ -440,6 +419,19 @@ footer p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus + .form-label {
+  -webkit-transform: translate(-20px, -40px);
+          transform: translate(-20px, -40px);
+  font-size: 12px;
+  color: #2196f3;
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  -webkit-transform: translate(-20px, -40px);
+          transform: translate(-20px, -40px);
+  font-size: 12px;
+}
+
 .icon-Human {
   position: absolute;
   display: inline-block;
@@ -447,6 +439,10 @@ footer p {
           transform: translateY(-50%);
   top: 50%;
   left: 16px;
+}
+
+.form-input:focus ~ .icon-Human {
+  fill: #2196f3;
 }
 
 .form-tel {
@@ -466,24 +462,7 @@ footer p {
 }
 
 .form-inputtel:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-inputtel:focus + .form-label-tel {
-  -webkit-transform: translate(-20px, -40px);
-          transform: translate(-20px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-inputtel:not(:placeholder-shown) + .form-label-tel {
-  -webkit-transform: translate(-20px, -40px);
-          transform: translate(-20px, -40px);
-  font-size: 12px;
-}
-
-.form-inputtel:focus ~ .icon-Trubka {
-  fill: var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .form-label-tel {
@@ -498,6 +477,19 @@ footer p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-inputtel:focus + .form-label-tel {
+  -webkit-transform: translate(-20px, -40px);
+          transform: translate(-20px, -40px);
+  font-size: 12px;
+  color: #2196f3;
+}
+
+.form-inputtel:not(:placeholder-shown) + .form-inputtel:focus + .form-label-tel {
+  -webkit-transform: translate(-20px, -40px);
+          transform: translate(-20px, -40px);
+  font-size: 12px;
+}
+
 .icon-Trubka {
   position: absolute;
   display: inline-block;
@@ -505,6 +497,10 @@ footer p {
           transform: translateY(-50%);
   top: 50%;
   left: 16px;
+}
+
+.form-inputtel:focus ~ .icon-Trubka {
+  fill: #2196f3;
 }
 
 .form-mail {
@@ -524,24 +520,7 @@ footer p {
 }
 
 .form-inputmail:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-inputmail:focus + .form-label-mail {
-  -webkit-transform: translate(-20px, -40px);
-          transform: translate(-20px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-inputmail:not(:placeholder-shown) + .form-label-mail {
-  -webkit-transform: translate(-20px, -40px);
-          transform: translate(-20px, -40px);
-  font-size: 12px;
-}
-
-.form-inputmail:focus ~ .icon-Konvert {
-  fill: var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .form-label-mail {
@@ -556,6 +535,19 @@ footer p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-inputmail:focus + .form-label-mail {
+  -webkit-transform: translate(-20px, -40px);
+          transform: translate(-20px, -40px);
+  font-size: 12px;
+  color: #2196f3;
+}
+
+.form-inputmail:not(:placeholder-shown) + .form-label-mail {
+  -webkit-transform: translate(-20px, -40px);
+          transform: translate(-20px, -40px);
+  font-size: 12px;
+}
+
 .icon-Konvert {
   position: absolute;
   display: inline-block;
@@ -563,6 +555,10 @@ footer p {
           transform: translateY(-50%);
   top: 50%;
   left: 16px;
+}
+
+.form-inputmail:focus ~ .icon-Konvert {
+  fill: #2196f3;
 }
 
 .form-komment {
@@ -584,20 +580,7 @@ footer p {
 }
 
 .form-areakomment:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-areakomment:focus + .form-label-komm {
-  -webkit-transform: translate(3px, -40px);
-          transform: translate(3px, -40px);
-  font-size: 12px;
-  color: var(--accent-color);
-}
-
-.form-areakomment:not(:placeholder-shown) + .form-label-komm {
-  -webkit-transform: translate(3px, -40px);
-          transform: translate(3px, -40px);
-  font-size: 12px;
+  border: 1px solid #2196f3;
 }
 
 .form-label-komm {
@@ -610,6 +593,19 @@ footer p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-areakomment:focus + .form-label-komm {
+  -webkit-transform: translate(3px, -40px);
+          transform: translate(3px, -40px);
+  font-size: 12px;
+  color: #2196f3;
+}
+
+.form-areakomment:not(:placeholder-shown) + .form-areakomment:focus + .form-label-komm {
+  -webkit-transform: translate(3px, -40px);
+          transform: translate(3px, -40px);
+  font-size: 12px;
 }
 
 .form-check {
@@ -637,12 +633,6 @@ footer p {
   position: absolute;
 }
 
-.checkbox:checked + .icon {
-  border: none;
-  background-image: url(../images/iconcheck.svg);
-  background-size: contain;
-}
-
 .icon {
   display: inline-block;
   width: 16px;
@@ -651,10 +641,16 @@ footer p {
   border-radius: 4px;
 }
 
+.checkbox:checked + .icon {
+  border: none;
+  background-image: url(../images/iconcheck.svg);
+  background-size: contain;
+}
+
 .form-sendbutton {
   font-weight: bold;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: #2196f3;
+  color: #fff;
   height: 50px;
   width: 200px;
   border-radius: 5px;
@@ -668,14 +664,13 @@ footer p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-sendbutton:hover,
-.form-sendbutton:focus {
+.form-sendbutton:hover, .form-sendbutton:focus {
   background-color: #49a5f0;
 }
 
 /* Секция Героя */
 .sec-hero h1 {
-  color: var(--primary-bg-color);
+  color: #fff;
   margin-top: 0;
   margin-bottom: 30;
 }
@@ -695,8 +690,8 @@ footer p {
 
 .main-button {
   font-weight: bold;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: #2196f3;
+  color: #fff;
   height: 50px;
   width: 200px;
   border-radius: 5px;
@@ -710,8 +705,7 @@ footer p {
           transition-delay: 0;
 }
 
-.main-button:hover,
-.main-button:focus {
+.main-button:hover, .main-button:focus {
   background-color: #49a5f0;
 }
 
@@ -766,7 +760,7 @@ footer p {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: var(--secondary-text-color);
+  color: #757575;
   margin-top: 10px;
 }
 
@@ -827,7 +821,7 @@ footer p {
 
 /* Секция "Наша команда*/
 .sec-ourteam {
-  background-color: var(--secondary-bg-color);
+  background-color: #f5f4fa;
   margin-top: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -846,7 +840,7 @@ footer p {
 
 .sec-ourteamlist > li {
   text-align: center;
-  background-color: var(--primary-bg-color);
+  background-color: #fff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   padding-bottom: 24px;
@@ -865,7 +859,7 @@ footer p {
 .sec-ourteam p {
   margin-top: 10px;
   margin-bottom: 0;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .sec-ourteamlist ul {
@@ -892,7 +886,6 @@ footer p {
   width: 44px;
   height: 44px;
   color: #afb1b8;
-  /* background-color: var(--accent-color); */
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
   -webkit-transition-duration: 250ms;
@@ -904,7 +897,7 @@ footer p {
 }
 
 .buttonlink a:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   color: white;
 }
 
@@ -951,8 +944,8 @@ footer p {
 }
 
 .ourclientsicons:hover {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+  border: 1px solid #2196f3;
+  color: #2196f3;
 }
 
 .icon-logo1,
@@ -996,8 +989,8 @@ footer p {
 }
 
 .button-filter:hover {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: #2196f3;
+  color: #fff;
 }
 
 /* Секция "Портфолио наших работ*/
@@ -1019,7 +1012,7 @@ footer p {
 .sec-ourportfolio p {
   font-size: 16px;
   line-height: 30px;
-  color: var(--secondary-text-color);
+  color: #757575;
   margin-left: 24px;
 }
 
@@ -1040,11 +1033,6 @@ footer p {
   display: block;
   position: relative;
   overflow: hidden;
-}
-
-.sec-ourportfoliolist > li:hover .overley {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
 }
 
 .sec-ourportfoliolist > li:not(:nth-child(3n)) {
@@ -1068,6 +1056,11 @@ footer p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sec-ourportfoliolist > li:hover .overley {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .overley p {
